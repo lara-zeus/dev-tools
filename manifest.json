@@ -1,0 +1,17 @@
+{
+    "name": "FilamentPHP devTools",
+    "description": "a dev tool extension for filamentPHP",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "css": ["content.css"],
+            "js": ["content.js"]
+        }
+    ],
+    "permissions": ["storage", "activeTab","tabs"]
+}
